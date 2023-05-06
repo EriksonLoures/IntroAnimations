@@ -6,15 +6,12 @@
 //
 
 import SwiftUI
+import Lottie
 
-struct OnBoardingItem: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct OnBoardingItem_Previews: PreviewProvider {
-    static var previews: some View {
-        OnBoardingItem()
-    }
+struct OnboardingItem: Identifiable, Equatable {
+    var id: UUID = .init()
+    var title: String
+    var subTitle: String
+    var lottieView: LottieAnimationView = .init()
+//    For Play/Pause Lottie Animation
 }
